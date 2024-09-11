@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:03              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_HashTable { protected $items = array(); protected $keyMap = array(); public function __construct($pSource = null) { if ($pSource !== null) { $this->addFromSource($pSource); } } public function addFromSource($pSource = null) { if ($pSource == null) { return; } elseif (!is_array($pSource)) { throw new PHPExcel_Exception("\111\156\166\141\x6c\x69\x64\x20\x61\x72\x72\141\171\x20\160\x61\162\141\x6d\x65\x74\145\x72\40\160\x61\x73\x73\x65\144\56"); } foreach ($pSource as $item) { $this->add($item); } } public function add(PHPExcel_IComparable $pSource = null) { $hash = $pSource->getHashCode(); if (!isset($this->items[$hash])) { $this->items[$hash] = $pSource; $this->keyMap[count($this->items) - 1] = $hash; } } public function remove(PHPExcel_IComparable $pSource = null) { $hash = $pSource->getHashCode(); if (isset($this->items[$hash])) { goto SHMmr; QfOlE: unset($this->keyMap[count($this->keyMap) - 1]); goto oGzOA; Ad8Xa: $deleteKey = -1; goto moSrk; moSrk: foreach ($this->keyMap as $key => $value) { if ($deleteKey >= 0) { $this->keyMap[$key - 1] = $value; } if ($value == $hash) { $deleteKey = $key; } } goto QfOlE; SHMmr: unset($this->items[$hash]); goto Ad8Xa; oGzOA: } } public function clear() { $this->items = array(); $this->keyMap = array(); } public function count() { return count($this->items); } public function getIndexForHashCode($pHashCode = '') { return array_search($pHashCode, $this->keyMap); } public function getByIndex($pIndex = 0) { if (isset($this->keyMap[$pIndex])) { return $this->getByHashCode($this->keyMap[$pIndex]); } return null; } public function getByHashCode($pHashCode = '') { if (isset($this->items[$pHashCode])) { return $this->items[$pHashCode]; } return null; } public function toArray() { return $this->items; } public function __clone() { $vars = get_object_vars($this); foreach ($vars as $key => $value) { if (is_object($value)) { $this->{$key} = clone $value; } } } }

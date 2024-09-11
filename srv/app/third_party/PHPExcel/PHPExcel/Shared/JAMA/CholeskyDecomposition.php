@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:03              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class CholeskyDecomposition { private $L = array(); private $m; private $isspd = true; public function __construct($A = null) { if ($A instanceof Matrix) { goto KwC1i; ZzQtE: $this->m = $A->getRowDimension(); goto NVTs3; NVTs3: for ($i = 0; $i < $this->m; ++$i) { for ($j = $i; $j < $this->m; ++$j) { for ($sum = $this->L[$i][$j], $k = $i - 1; $k >= 0; --$k) { $sum -= $this->L[$i][$k] * $this->L[$j][$k]; } if ($i == $j) { if ($sum >= 0) { $this->L[$i][$i] = sqrt($sum); } else { $this->isspd = false; } } else { if ($this->L[$i][$i] != 0) { $this->L[$j][$i] = $sum / $this->L[$i][$i]; } } } for ($k = $i + 1; $k < $this->m; ++$k) { $this->L[$i][$k] = 0.0; } } goto TcYHq; KwC1i: $this->L = $A->getArray(); goto ZzQtE; TcYHq: } else { throw new PHPExcel_Calculation_Exception(JAMAError(ARGUMENT_TYPE_EXCEPTION)); } } public function isSPD() { return $this->isspd; } public function getL() { return new Matrix($this->L); } public function solve($B = null) { if ($B instanceof Matrix) { if ($B->getRowDimension() == $this->m) { if ($this->isspd) { goto Z1NoZ; o8lMb: for ($k = 0; $k < $this->m; ++$k) { for ($i = $k + 1; $i < $this->m; ++$i) { for ($j = 0; $j < $nx; ++$j) { $X[$i][$j] -= $X[$k][$j] * $this->L[$i][$k]; } } for ($j = 0; $j < $nx; ++$j) { $X[$k][$j] /= $this->L[$k][$k]; } } goto FtEw5; lQJWd: return new Matrix($X, $this->m, $nx); goto eC4Bm; f1sLZ: $nx = $B->getColumnDimension(); goto o8lMb; FtEw5: for ($k = $this->m - 1; $k >= 0; --$k) { for ($j = 0; $j < $nx; ++$j) { $X[$k][$j] /= $this->L[$k][$k]; } for ($i = 0; $i < $k; ++$i) { for ($j = 0; $j < $nx; ++$j) { $X[$i][$j] -= $X[$k][$j] * $this->L[$k][$i]; } } } goto lQJWd; Z1NoZ: $X = $B->getArrayCopy(); goto f1sLZ; eC4Bm: } else { throw new PHPExcel_Calculation_Exception(JAMAError(MatrixSPDException)); } } else { throw new PHPExcel_Calculation_Exception(JAMAError(MATRIX_DIMENSION_EXCEPTION)); } } else { throw new PHPExcel_Calculation_Exception(JAMAError(ARGUMENT_TYPE_EXCEPTION)); } } }

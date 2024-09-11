@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:05              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_Calculation_Function { const CATEGORY_CUBE = "\103\x75\142\x65"; const CATEGORY_DATABASE = "\104\141\164\141\x62\x61\163\x65"; const CATEGORY_DATE_AND_TIME = "\104\141\164\x65\x20\x61\156\144\40\124\x69\x6d\x65"; const CATEGORY_ENGINEERING = "\105\156\147\151\156\145\x65\x72\x69\x6e\147"; const CATEGORY_FINANCIAL = "\x46\151\x6e\141\x6e\x63\x69\x61\154"; const CATEGORY_INFORMATION = "\111\x6e\146\157\162\x6d\x61\x74\x69\x6f\156"; const CATEGORY_LOGICAL = "\114\157\147\151\x63\141\x6c"; const CATEGORY_LOOKUP_AND_REFERENCE = "\114\157\x6f\x6b\165\160\40\141\x6e\144\x20\122\145\x66\145\x72\x65\x6e\143\145"; const CATEGORY_MATH_AND_TRIG = "\115\141\164\150\x20\x61\x6e\144\40\124\x72\151\147"; const CATEGORY_STATISTICAL = "\123\164\141\x74\151\x73\x74\151\x63\141\154"; const CATEGORY_TEXT_AND_DATA = "\x54\x65\170\164\x20\x61\x6e\144\40\x44\x61\164\141"; private $category; private $excelName; private $phpExcelName; public function __construct($pCategory = null, $pExcelName = null, $pPHPExcelName = null) { if ($pCategory !== null && $pExcelName !== null && $pPHPExcelName !== null) { goto G_rji; SI2k0: $this->phpExcelName = $pPHPExcelName; goto GetCB; G_rji: $this->category = $pCategory; goto O4crW; O4crW: $this->excelName = $pExcelName; goto SI2k0; GetCB: } else { throw new PHPExcel_Calculation_Exception("\111\x6e\166\x61\154\x69\144\x20\x70\141\162\141\155\145\x74\145\162\163\40\160\x61\x73\x73\x65\144\56"); } } public function getCategory() { return $this->category; } public function setCategory($value = null) { if (!is_null($value)) { $this->category = $value; } else { throw new PHPExcel_Calculation_Exception("\111\156\x76\x61\x6c\151\x64\x20\x70\x61\x72\141\x6d\x65\164\x65\162\x20\160\141\163\x73\x65\144\56"); } } public function getExcelName() { return $this->excelName; } public function setExcelName($value) { $this->excelName = $value; } public function getPHPExcelName() { return $this->phpExcelName; } public function setPHPExcelName($value) { $this->phpExcelName = $value; } }

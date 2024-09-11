@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:09              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ if (!empty($recent_depense)) { goto aGkoq; Jd1xw: echo "\11\x9\74\x2f\x74\142\x6f\144\171\76\xd\12\11\x3c\x2f\164\x61\x62\x6c\x65\76\xd\xa"; goto U70j_; yDzI1: foreach ($recent_depense as $key => $dp) { goto G_fv7; kzqsU: echo "\106\74\57\x74\x64\x3e\xd\12\11\11\x9\11\11\74\164\144\76\x3c\141\40\x68\x72\x65\x66\75\x22"; goto B59Q3; gOqCL: echo ucfirst($dp->category); goto tm4JB; tm4JB: echo "\x3c\x2f\x74\144\x3e\15\12\x9\11\11\11\x9\74\164\144\76"; goto N8fTP; B59Q3: echo site_url("\144\145\160\x65\156\x73\x65\x73\x2f\145\144\151\164\77\x69\144\75" . $dp->id); goto uVMlv; deH5D: echo ucfirst($dp->nature); goto wUePt; Jn6oR: echo "\74\57\x74\x64\76\xd\xa\11\11\11\11\11\74\164\x64\76"; goto deH5D; uVMlv: echo "\x22\76\74\x69\x20\x63\x6c\141\x73\163\x3d\x22\x66\x61\x73\40\146\141\x2d\145\x64\151\x74\42\x3e\74\57\151\x3e\x3c\57\141\76\x3c\57\164\x64\x3e\xd\12\11\11\x9\11\74\57\164\x72\x3e\xd\xa\x9\x9\11"; goto EDJvy; cD_ao: echo $key + 1; goto Jn6oR; G_fv7: echo "\11\11\x9\11\74\164\162\76\15\12\x9\x9\x9\11\x9\x3c\x74\144\76"; goto cD_ao; N8fTP: echo number_format($dp->montant, 0, "\54", "\x20"); goto kzqsU; wUePt: echo "\74\x2f\164\144\x3e\15\xa\11\x9\x9\x9\x9\74\164\144\76"; goto gOqCL; EDJvy: } goto Jd1xw; aGkoq: echo "\x9\74\164\x61\x62\154\145\x20\x63\x6c\141\163\163\x3d\42\164\x61\142\x6c\x65\x20\164\x61\x62\154\145\x2d\151\x6e\x76\145\x72\163\145\x20\x74\141\142\x6c\145\x2d\163\164\x72\151\x70\145\x64\42\76\15\xa\x9\x9\74\164\x68\x65\141\144\x3e\xd\12\11\11\x9\74\x74\162\x3e\15\xa\11\11\11\x9\74\164\150\76\x23\74\57\164\x68\76\xd\xa\11\x9\11\x9\74\x74\x68\x3e\116\141\164\x75\162\x65\74\x2f\x74\x68\x3e\xd\12\11\x9\x9\x9\x3c\x74\150\x3e\103\x61\164\303\xa9\x67\x6f\162\x69\x65\x3c\x2f\x74\x68\x3e\15\12\11\x9\11\11\74\164\150\76\x4d\x6f\156\164\141\156\x74\x3c\57\164\x68\x3e\15\12\x9\x9\11\11\74\x74\x68\x3e\101\x63\x74\151\x6f\156\74\x2f\x74\x68\x3e\15\xa\11\x9\11\x3c\x2f\164\162\76\15\xa\11\11\x3c\57\164\150\145\141\144\76\15\12\x9\x9\x3c\164\142\157\x64\171\76\xd\12\x9\11\11"; goto yDzI1; U70j_: }

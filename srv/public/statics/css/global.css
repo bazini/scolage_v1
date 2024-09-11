@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/SourceSansPro-Light.ttf") format("ttf");
+  unicode-range: U+0370-03FF;
+}
+/* line 9, ../sass/global.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 12, ../sass/global.scss */
+.badge-flag {
+  background: #0088cc !important;
+}
+
+/* line 15, ../sass/global.scss */
+.editTrans {
+  padding: 10px 5px;
+  font-size: 1.1em;
+  border: solid 1px #C9C8C8;
+  outline: none;
+}
+
+/* line 22, ../sass/global.scss */
+.action-td {
+  visibility: hidden;
+}
+
+/* line 26, ../sass/global.scss */
+.wait-loading {
+  position: relative;
+}
+/* line 28, ../sass/global.scss */
+.wait-loading img {
+  position: absolute;
+  top: 43px;
+  left: 100px;
+}
+
+/* line 34, ../sass/global.scss */
+td .progress, th .progress {
+  margin-top: 12px !important;
+}
+
+/* line 37, ../sass/global.scss */
+.tm-action {
+  position: relative;
+}
+/* line 39, ../sass/global.scss */
+.tm-action .del-tm {
+  visibility: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* line 45, ../sass/global.scss */
+.identite {
+  border: solid 1px;
+  width: 100%;
+}
+
+/* line 49, ../sass/global.scss */
+.std-photo-preview {
+  height: 108px;
+  width: 108px;
+  border: dashed 2px #d4d4d4;
+  text-align: center;
+}
+/* line 54, ../sass/global.scss */
+.std-photo-preview img {
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+/* line 59, ../sass/global.scss */
+#dataTable {
+  min-height: 220px;
+}

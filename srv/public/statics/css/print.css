@@ -1,0 +1,54 @@
+/* line 2, ../sass/print.scss */
+.classe-tm .tm-title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/* line 7, ../sass/print.scss */
+.classe-tm table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 15, ../sass/print.scss */
+.classe-tm .th-time {
+  width: 7mm;
+}
+/* line 18, ../sass/print.scss */
+.classe-tm .th-norm {
+  width: 37mm;
+}
+/* line 21, ../sass/print.scss */
+.classe-tm .tr-norm {
+  text-align: center;
+}
+/* line 22, ../sass/print.scss */
+.classe-tm .tr-norm th, .classe-tm .tr-norm td {
+  height: 18mm;
+}
+/* line 26, ../sass/print.scss */
+.classe-tm .tr-norm a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+/* line 34, ../sass/print.scss */
+.std-fiche .std-avatar, .std-fiche .std-infos, .std-fiche .school-infos {
+  float: left;
+}
+/* line 37, ../sass/print.scss */
+.std-fiche .std-avatar, .std-fiche .school-infos {
+  width: 52.5mm !important;
+}
+/* line 39, ../sass/print.scss */
+.std-fiche .std-avatar img, .std-fiche .school-infos img {
+  width: 100%;
+}
+/* line 43, ../sass/print.scss */
+.std-fiche .std-infos {
+  width: 163mm !important;
+}
+/* line 45, ../sass/print.scss */
+.std-fiche .std-infos div {
+  padding: 15px;
+}

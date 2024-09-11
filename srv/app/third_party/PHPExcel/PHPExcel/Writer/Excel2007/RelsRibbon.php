@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:07              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_Writer_Excel2007_RelsRibbon extends PHPExcel_Writer_Excel2007_WriterPart { public function writeRibbonRelationships(PHPExcel $pPHPExcel = null) { goto gmUY6; my51n: $localRels = $pPHPExcel->getRibbonBinObjects("\x6e\x61\x6d\x65\163"); goto iMbpa; G7iUF: $objWriter->endElement(); goto OTvs2; gmUY6: $objWriter = null; goto DQXXz; DQXXz: if ($this->getParentWriter()->getUseDiskCaching()) { $objWriter = new PHPExcel_Shared_XMLWriter(PHPExcel_Shared_XMLWriter::STORAGE_DISK, $this->getParentWriter()->getDiskCachingDirectory()); } else { $objWriter = new PHPExcel_Shared_XMLWriter(PHPExcel_Shared_XMLWriter::STORAGE_MEMORY); } goto gn3P7; iMbpa: if (is_array($localRels)) { foreach ($localRels as $aId => $aTarget) { goto rQhKP; rQhKP: $objWriter->startElement("\122\x65\154\141\164\151\157\156\x73\x68\x69\x70"); goto wgAax; t232b: $objWriter->endElement(); goto FIbBq; PNBMo: $objWriter->writeAttribute("\x54\x61\162\x67\x65\x74", $aTarget); goto t232b; wgAax: $objWriter->writeAttribute("\x49\144", $aId); goto bARP2; bARP2: $objWriter->writeAttribute("\x54\x79\x70\x65", "\150\164\164\160\x3a\x2f\x2f\163\x63\150\x65\155\x61\x73\56\x6f\160\x65\x6e\170\x6d\154\x66\x6f\x72\155\141\x74\163\x2e\157\x72\147\x2f\157\146\146\151\143\145\104\157\x63\165\155\x65\156\x74\x2f\62\x30\60\66\57\162\x65\x6c\141\x74\151\157\156\x73\150\151\x70\x73\57\151\x6d\x61\x67\145"); goto PNBMo; FIbBq: } } goto G7iUF; OTvs2: return $objWriter->getData(); goto SsHju; gn3P7: $objWriter->startDocument("\x31\x2e\60", "\x55\x54\106\x2d\x38", "\x79\145\x73"); goto hEnJ_; LdBoR: $objWriter->writeAttribute("\x78\155\x6c\x6e\x73", "\x68\x74\x74\x70\72\x2f\x2f\x73\x63\150\x65\155\x61\x73\x2e\x6f\160\145\x6e\x78\x6d\154\x66\x6f\x72\155\141\x74\163\x2e\157\162\x67\x2f\160\x61\x63\x6b\x61\147\145\57\62\60\60\66\x2f\x72\145\x6c\141\x74\151\157\156\163\x68\151\160\163"); goto my51n; hEnJ_: $objWriter->startElement("\122\x65\x6c\141\x74\151\157\156\x73\x68\151\160\163"); goto LdBoR; SsHju: } }

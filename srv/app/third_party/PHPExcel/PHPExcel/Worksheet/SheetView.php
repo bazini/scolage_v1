@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:08              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_Worksheet_SheetView { const SHEETVIEW_NORMAL = "\x6e\x6f\x72\155\x61\x6c"; const SHEETVIEW_PAGE_LAYOUT = "\160\141\x67\145\x4c\x61\x79\x6f\x75\164"; const SHEETVIEW_PAGE_BREAK_PREVIEW = "\160\x61\147\145\102\162\145\141\153\x50\162\145\x76\151\145\167"; private static $sheetViewTypes = array(self::SHEETVIEW_NORMAL, self::SHEETVIEW_PAGE_LAYOUT, self::SHEETVIEW_PAGE_BREAK_PREVIEW); private $zoomScale = 100; private $zoomScaleNormal = 100; private $sheetviewType = self::SHEETVIEW_NORMAL; public function __construct() { } public function getZoomScale() { return $this->zoomScale; } public function setZoomScale($pValue = 100) { if ($pValue >= 1 || is_null($pValue)) { $this->zoomScale = $pValue; } else { throw new PHPExcel_Exception("\x53\x63\141\154\x65\40\x6d\165\x73\x74\x20\142\x65\40\x67\x72\145\x61\x74\145\162\x20\164\x68\141\156\x20\157\162\x20\145\161\165\x61\x6c\40\x74\157\40\61\x2e"); } return $this; } public function getZoomScaleNormal() { return $this->zoomScaleNormal; } public function setZoomScaleNormal($pValue = 100) { if ($pValue >= 1 || is_null($pValue)) { $this->zoomScaleNormal = $pValue; } else { throw new PHPExcel_Exception("\x53\x63\141\154\145\40\x6d\x75\163\x74\x20\142\145\40\x67\x72\145\141\164\x65\x72\40\164\150\x61\x6e\40\x6f\162\x20\x65\161\x75\x61\x6c\40\164\157\40\x31\56"); } return $this; } public function getView() { return $this->sheetviewType; } public function setView($pValue = null) { goto oR6qR; oR6qR: if ($pValue === null) { $pValue = self::SHEETVIEW_NORMAL; } goto X77Tg; X77Tg: if (in_array($pValue, self::$sheetViewTypes)) { $this->sheetviewType = $pValue; } else { throw new PHPExcel_Exception("\111\x6e\166\x61\x6c\151\144\x20\x73\150\x65\145\x74\x76\151\145\167\x20\x6c\141\171\157\x75\164\x20\164\x79\160\x65\56"); } goto xbbLR; xbbLR: return $this; goto D7NDF; D7NDF: } public function __clone() { $vars = get_object_vars($this); foreach ($vars as $key => $value) { if (is_object($value)) { $this->{$key} = clone $value; } else { $this->{$key} = $value; } } } }

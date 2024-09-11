@@ -1,0 +1,27 @@
+@import "compass";
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/SourceSansPro-Light.ttf') format('ttf');
+  unicode-range: U+0370-03FF;
+}
+.camera-wrapper{
+	width: 640px;
+	height: 480px;
+	margin: auto;
+}
+.buttons{
+	text-align: center;
+}
+#previewSection{
+	margin-top: 15px;
+}
+#originalImg, #croppedImg{
+	width: 200px;
+	height: 200px;
+	border: dashed 1px #BBBBBB;
+}
+canvas, video{
+	max-width: 100%;
+}

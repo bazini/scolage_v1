@@ -1,0 +1,14 @@
+.input-password {
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.login-form .input-group-prepend .input-group-text {
+	border-left: 1px solid #ced4da;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 0 transparent;
+}
+.login-form .input-login-name {
+	border-right: 1px solid #ced4da !important;
+}

@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:03              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_CachedObjectStorage_Igbinary extends PHPExcel_CachedObjectStorage_CacheBase implements PHPExcel_CachedObjectStorage_ICache { protected function storeData() { if ($this->currentCellIsDirty && !empty($this->currentObjectID)) { goto K4qbc; Cz3Rl: $this->currentCellIsDirty = false; goto jMg7q; jvS2I: $this->cellCache[$this->currentObjectID] = igbinary_serialize($this->currentObject); goto Cz3Rl; K4qbc: $this->currentObject->detach(); goto jvS2I; jMg7q: } $this->currentObjectID = $this->currentObject = null; } public function addCacheData($pCoord, PHPExcel_Cell $cell) { goto IWSXc; IWSXc: if ($pCoord !== $this->currentObjectID && $this->currentObjectID !== null) { $this->storeData(); } goto fLhXa; jZTYi: $this->currentObject = $cell; goto lSOsT; MNIK1: return $cell; goto m8VIY; lSOsT: $this->currentCellIsDirty = true; goto MNIK1; fLhXa: $this->currentObjectID = $pCoord; goto jZTYi; m8VIY: } public function getCacheData($pCoord) { goto DXd4W; ZOzsH: return $this->currentObject; goto u7CjP; APDuX: $this->currentObject->attach($this); goto ZOzsH; kwYEU: $this->currentObject = igbinary_unserialize($this->cellCache[$pCoord]); goto APDuX; COcT9: $this->storeData(); goto vZLMW; DXd4W: if ($pCoord === $this->currentObjectID) { return $this->currentObject; } goto COcT9; fN2xE: $this->currentObjectID = $pCoord; goto kwYEU; vZLMW: if (!isset($this->cellCache[$pCoord])) { return null; } goto fN2xE; u7CjP: } public function getCellList() { if ($this->currentObjectID !== null) { $this->storeData(); } return parent::getCellList(); } public function unsetWorksheetCells() { goto JBc1i; uj6pT: $this->parent = null; goto z7K8W; JBc1i: if (!is_null($this->currentObject)) { $this->currentObject->detach(); $this->currentObject = $this->currentObjectID = null; } goto zdh_n; zdh_n: $this->cellCache = array(); goto uj6pT; z7K8W: } public static function cacheMethodIsAvailable() { if (!function_exists("\151\x67\142\151\x6e\141\x72\x79\x5f\163\145\x72\x69\141\154\x69\172\145")) { return false; } return true; } }

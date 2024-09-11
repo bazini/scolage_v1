@@ -1,0 +1,11 @@
+<?php
+/*   __________________________________________________
+    |  Obfuscated by YAK Pro - Php Obfuscator  2.0.14  |
+    |              on 2024-09-11 13:12:06              |
+    |    GitHub: https://github.com/pk-fr/yakpro-po    |
+    |__________________________________________________|
+*/
+/*
+
+*/
+ class PHPExcel_DocumentSecurity { private $lockRevision; private $lockStructure; private $lockWindows; private $revisionsPassword; private $workbookPassword; public function __construct() { goto PQrL6; abpTS: $this->workbookPassword = ''; goto rJsFF; UuqTR: $this->lockWindows = false; goto c5irZ; PQrL6: $this->lockRevision = false; goto JJAtJ; JJAtJ: $this->lockStructure = false; goto UuqTR; c5irZ: $this->revisionsPassword = ''; goto abpTS; rJsFF: } public function isSecurityEnabled() { return $this->lockRevision || $this->lockStructure || $this->lockWindows; } public function getLockRevision() { return $this->lockRevision; } public function setLockRevision($pValue = false) { $this->lockRevision = $pValue; return $this; } public function getLockStructure() { return $this->lockStructure; } public function setLockStructure($pValue = false) { $this->lockStructure = $pValue; return $this; } public function getLockWindows() { return $this->lockWindows; } public function setLockWindows($pValue = false) { $this->lockWindows = $pValue; return $this; } public function getRevisionsPassword() { return $this->revisionsPassword; } public function setRevisionsPassword($pValue = '', $pAlreadyHashed = false) { goto bYzsH; ql_Mz: $this->revisionsPassword = $pValue; goto QVEHb; QVEHb: return $this; goto MQwOq; bYzsH: if (!$pAlreadyHashed) { $pValue = PHPExcel_Shared_PasswordHasher::hashPassword($pValue); } goto ql_Mz; MQwOq: } public function getWorkbookPassword() { return $this->workbookPassword; } public function setWorkbookPassword($pValue = '', $pAlreadyHashed = false) { goto QZ17F; QZ17F: if (!$pAlreadyHashed) { $pValue = PHPExcel_Shared_PasswordHasher::hashPassword($pValue); } goto RfZA0; RfZA0: $this->workbookPassword = $pValue; goto UV7uj; UV7uj: return $this; goto UdtPb; UdtPb: } public function __clone() { $vars = get_object_vars($this); foreach ($vars as $key => $value) { if (is_object($value)) { $this->{$key} = clone $value; } else { $this->{$key} = $value; } } } }

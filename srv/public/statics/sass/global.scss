@@ -1,0 +1,61 @@
+@import "compass";
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/SourceSansPro-Light.ttf') format('ttf');
+  unicode-range: U+0370-03FF;
+}
+.hidden {
+	display: none !important;
+}
+.badge-flag{
+	@include background(#0088cc !important);
+}
+.editTrans{
+	padding: 10px 5px;
+	font-size: 1.1em;
+	border: solid 1px #C9C8C8;
+	outline: none;
+}
+// Options de titre
+.action-td {
+  visibility: hidden;
+}
+// Lorsqu'on va chercher les éléments d'un select
+.wait-loading {
+	position: relative;
+	img {
+		position: absolute;
+		top: 43px; left: 100px;
+	}
+}
+// La barre de progression dans un tableau
+td .progress, th .progress{
+	margin-top: 12px !important;
+}
+.tm-action{
+	position: relative;
+	.del-tm{
+		visibility: hidden;
+		position: relative;
+		margin-top: 10px;
+	}
+}
+.identite{
+	border: solid 1px;
+	width: 100%;
+}
+.std-photo-preview{
+	height: 108px;
+	width: 108px;
+	border: dashed 2px #d4d4d4;
+	text-align: center;
+	img{
+		margin-top: 2px;
+		margin-left: 1px;
+	}
+}
+#dataTable{
+	min-height: 220px;
+}

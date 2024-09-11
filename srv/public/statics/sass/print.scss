@@ -1,0 +1,49 @@
+.classe-tm{
+	.tm-title{
+		text-align: center;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	table{
+		//border: solid 1px;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	th, td{
+		//border: solid 1px;
+	}
+	.th-time{
+		width: 7mm;
+	}
+	.th-norm{
+		width: 37mm;
+	}
+	.tr-norm{
+		th, td{
+			height: 18mm;
+		}
+		text-align: center;
+		a{
+			text-decoration: none;
+			color: inherit;
+			text-align: center;
+		}
+	}
+}
+.std-fiche{
+	.std-avatar, .std-infos, .school-infos{
+		float: left;
+	}
+	.std-avatar, .school-infos{
+		width: 52.5mm !important;
+		img{
+			width: 100%;
+		}
+	}
+	.std-infos{
+		width: 163mm !important;
+		div{
+			padding: 15px;
+		}
+	}
+}
